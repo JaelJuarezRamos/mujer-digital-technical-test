@@ -1,9 +1,10 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
-import './App.css'
+import OrderForm from "./componentes/OrderForm";
+import { useState } from 'react';
+import viteLogo from '/vite.svg';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -24,8 +25,14 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+
+      <div className="App">
+        <h1>Bienvenido a la aplicación de pedidos</h1>
+        <OrderForm />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
